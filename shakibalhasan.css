@@ -313,7 +313,7 @@ p {
 }
 
 /* Optional: Add media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .container {
     flex-direction: column; /* Stack elements vertically on smaller screens */
   }
@@ -325,6 +325,19 @@ p {
     width: 100%;
     margin-bottom: 20px; /* Add space between stacked elements */
   }
+
+  .col-lg-7{
+    order: 2;
+  }
+  .nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
 }
 .navbaru {
   background-color: #333;
