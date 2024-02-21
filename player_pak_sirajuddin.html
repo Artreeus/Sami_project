@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crickx</title>
+    <!-- bootstrap cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link rel="shortcut icon" href="images/mainlogo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./shakibalhasan.css" />
+
+    <!-- tailwind css  -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+    <!-- chart js cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body table
+        tr,
+        td{
+            font-weight: 500;
+        }
+        body table th{
+            font-weight: 700 !important;
+        }
+        .sama{
+            color:#021832;
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+    
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar section -->   
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light w-75 m-auto" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="yyv/mainlogo.png" class="w-50" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <img src="yyv/Facebook.png" class="pe-4" alt="" >
+                </li>
+                <li class="nav-item">
+                  <img src="yyv/Instagram.png" class="pe-4" alt="">
+                </li>
+                <li class="nav-item">
+                  <img src="yyv/Twitter.png" class="pe-4" alt="">
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+            </div>
+          </div>
+        </nav>
+
+        <nav class="custom-link navbar navbar-expand-lg bg-body-tertiary w-75  m-auto h-75">
+          <div class="container-fluid bg-secondary texts">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown ">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ps-4 text-black">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item ps-4 text-black">
+                  <a class="nav-link" href="#">All Fixtures</a>
+                </li>
+                <li class="nav-item dropdown ps-4 text-black">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Leagues Around The World
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">
+                      <img src="yyv/bpl.jpg" alt="">Bangladesh Premiere League
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <img src="yyv/ipl.jpg"  alt="">Indian Premiere League
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <img src="yyv/bigbash.jpg" alt="">Big bash League
+                    </a></li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+    <!-- Navbar section exit -->
+
+    <!-- card section start  -->
+
+    
+    <div class="simren mt-5">
+        
+      <div class="logo-container">
+            <h2> Sirajuddin</h2>
+          <img src="yyv/Karachi Kings Pics/Siraj-Ud-Din.png" alt="Logo" class="logos">
+      </div>
+      <div class="text-container">
+          <p class="text">Role:  All_Rounder</p>
+          <p class="text">Height: -</p>
+         
+      </div>
+      <div class="additional-text-container">
+          <p class="text">Age: 22</p>
+          <p class="text">Kit No: - 17</p>
+         
+      </div>
+      <div class="right-logo-container">
+        <a href=team_pakistan.html>
+          <img src="yyv/national/pakistan.jpeg" alt="Right Logo" class="right-logo"></a>
+          <p class="right-text">Batting Ranking: -<a class="sama" href="t20_battingranking.html">(T20)</a>,   -<a class="sama" href="odi_battingranking.html"> (ODI)</a>, -<a class="sama" href="test_battingranking.html">(Test)</a></p>
+          <p class="right-text">Bowling Ranking: -<a class="sama" href="t20_battingranking.html"> (T20)</a>,   -<a class="sama" href="odi_battingranking.html">(ODI)</a>, -<a class="sama" href="test_battingranking.html"> (Test)</a></p>
+      </div>
+  </div>
+
+
+    <!-- Services section -->
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 section-title text-center mb-5">
+            <h6>Statistic About Player</h6>
+            <h3>Batting Statistics of 2024</h3>
+          </div>
+        </div>
+        <div class="row align-items-center service-item-wrap">
+          <div class="col-lg-7 p-lg-0">
+            <!--Service Area Start-->
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade active show p-5" id="spa" role="tabpanel">
+                
+
+<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+  <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+      <li class="me-2" role="presentation">
+          <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">TWENTY20</button>
+      </li>
+      <li class="me-2" role="presentation">
+          <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">T20 INT</button>
+      </li>
+      
+      
+  </ul>
+</div>
+<!--shadman as samis-->
+<div id="default-tab-content">
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-white-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<div class="relative overflow-x-auto">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-900 uppercase dark:text-black-400">
+            <tr>
+                <th scope="col" class="ps-[70px]  py-3 dark:text-black  font-[700]">
+                    Matches
+                </th>
+                <th scope="col" class="px-6 py-3 dark:text-black ">
+                   -
+                </th>
+                <th scope="col" class="px-6 py-3 dark:text-black font-[700]">
+                   Innings
+                </th>
+                <th scope="col" class="px-6 py-3 text-black">
+                    -
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white dark:bg-white-800">
+                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-[700]">
+                    Runs
+                </th>
+                <td class="px-6 py-4 text-black">
+                  -
+                </td>
+                <td class="px-6 py-4 text-black font-[700]">
+                   Avg
+                </td>
+                <td class="px-6 py-4 text-black">
+                  -
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-white-800">
+                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-[700]">
+                   SR
+                </th>
+                <td class="px-6 py-4 text-black">
+                  -
+                </td>
+                <td class="px-6 py-4 text-black font-[700]">
+                    Highest Runs
+                </td>
+                <td class="px-6 py-4 text-black">
+                   -
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-white-800">
+                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-[700]">
+                    50/100
+                </th>
+                <td class="px-6 py-4 text-black">
+                    0/0
+                </td>
+                <td class="px-6 py-4 text-black font-[700]">
+                    4/6
+                </td>
+                <td class="px-6 py-4 text-black">
+                   -
+                </td>
+            </tr>
+        </tbody>
+    </table>
+              </div>
+  </div>
+  <!--second-->
+  <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-white-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+<div class="relative overflow-x-auto">
+                  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                      <thead class="text-xs text-gray-900 uppercase dark:text-black-400">
+                          <tr>
+                              <th scope="col" class="ps-[70px]  py-3 dark:text-black  font-[700]">
+                                  Matches
+                              </th>
+                              <th scope="col" class="px-6 py-3 dark:text-black ">
+                                -
+                              </th>
+                              <th scope="col" class="px-6 py-3 dark:text-black font-[700]">
+                                 Innings
+                              </th>
+                              <th scope="col" class="px-6 py-3 text-black">
+                                  -
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="bg-white dark:bg-white-800">
+                              <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-[700]">
+                                  Runs
+                              </th>
+                              <td class="px-6 py-4 text-black">
+                                -
+                              </td>
+                              <td class="px-6 py-4 text-black font-[700]">
+                                 Avg
+                              </td>
+                              <td class="px-6 py-4 text-black">
+                                  -
+
+                              </td>
+                          </tr>
+                          <tr class="bg-white dark:bg-white-800">
+                              <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-800">
+                                 SR
+                              </th>
+                              <td class="px-6 py-4 text-black">
+                                  -
+                              </td>
+                              <td class="px-6 py-4 text-black font-[700]">
+                                  Highest Runs
+                              </td>
+                              <td class="px-6 py-4 text-black">
+                                 -
+                              </td>
+                          </tr>
+                          <tr class="bg-white dark:bg-white-800">
+                              <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black font-[700]">
+                                  50/100
+                              </th>
+                              <td class="px-6 py-4 text-black">
+                                  -
+                              </td>
+                              <td class="px-6 py-4 text-black font-[700]">
+                                  4/6
+                              </td>
+                              <td class="px-6 py-4 text-black">
+                                 -
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+  </div>
+
+</div>
+
+
+</div>
+               <!--ODI-->
+              <div class="tab-pane fade p-5" id="restaurent" role="tabpanel">
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-900 uppercase dark:text-black-400">
+                            <tr>
+                                <th scope="col" class="ps-[70px]  py-3 dark:text-black ">
+                                    Matches
+                                </th>
+                                <th scope="col" class="px-6 py-3 dark:text-black ">
+                                   -
+                                </th>
+                                <th scope="col" class="px-6 py-3 dark:text-black">
+                                   Innings
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-black">
+                                    -
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                    Runs
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                 -
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                   Avg
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                    -
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                   sr
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                  -
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                    Highest Runs
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                  -
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                    50/100
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                    -
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                    4/6
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                   -
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              <!--TEST-->
+              <div class="tab-pane fade p-5" id="swimming" role="tabpanel">
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-900 uppercase dark:text-black-400">
+                            <tr>
+                                <th scope="col" class="ps-[70px]  py-3 dark:text-black  font-[700] ">
+                                    Matches
+                                </th>
+                                <th scope="col" class="px-6 py-3 dark:text-black ">
+                                    -
+                                </th>
+                                <th scope="col" class="px-6 py-3 dark:text-black font-[700]">
+                                   Innings
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-black">
+                                    -
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                    Runs
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                   -
+                                </td>
+                                <td class="px-6 py-4 text-black font-[700]">
+                                   Avg
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                    -/-
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                   SR
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                    -
+                                </td>
+                                <td class="px-6 py-4 text-black font-[700]">
+                                    Highest Runs
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                   -
+                                </td>
+                            </tr>
+                            <tr class="bg-white dark:bg-white-800">
+                                <th scope="row" class="ps-[70px] py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                                    50/100
+                                </th>
+                                <td class="px-6 py-4 text-black">
+                                    -/-
+                                </td>
+                                <td class="px-6 py-4 text-black font-[700]">
+                                    4/6
+                                </td>
+                                <td class="px-6 py-4 text-black">
+                                    -/-
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+            </div>
+            <!--Service Area End-->
+          </div>
+          <div class="col-lg-5 position-relative">
+            <!--Service Tab Menu Area Start-->
+            <div class="service-menu-area">
+              <ul class="nav">
+                <li>
+                  <a data-bs-toggle="tab" href="#spa" class="active">
+                    <span class="service-icon">
+                      <img src="yyv/T20.png" alt="" />
+                    </span>
+                    <h5>T20</h5>
+                    <p>
+                      <span>T20 </span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#restaurent">
+                    <span class="service-icon">
+                      <img src="yyv/Odi.jpeg" alt="" />
+                    </span>
+                    <h5>Odi</h5>
+                    <p>
+                      <span>Odi</span> 
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a data-bs-toggle="tab" href="#swimming">
+                    <span class="service-icon">
+                      <img src="yyv/test.jpeg" alt="" />
+                    </span>
+                    <h5>Test</h5>
+                    <p>
+                      <span>Test</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Service Tab Menu Area End-->
+          </div>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+    <section class="container">
+      <div class="navbaru" class="py-24 text-center" >
+        <a href="shakiballtimestats.html" class=" ">PLAYER DETAILED STATISTICS</a>  
+      </div>
+
+    </section>
+    
+    <!-- Footer section -->
+    
+
+<footer class="bg-black rounded-lg shadow dark:bg-gray-900 m-4">
+  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+              </li>
+              <li>
+                  <a href="#" class="hover:underline">Contact</a>
+              </li>
+          </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Crickx</a>. All Rights Reserved.</span>
+  </div>
+</footer>
+
+
+    <!-- Footer section exit -->
+
+    
+
+
+
+
+
+
+    
+    <!-- Js section  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+
+    <!-- tailwind js  -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+  </body>
+</html>
